@@ -26,7 +26,7 @@ The IAM user/role running Terraform needs:
 ## Step 1 — Bootstrap Remote State (One-time)
 
 ```bash
-AWS_REGION="us-east-1"
+AWS_REGION="ap-south-1"
 ENV="dev"   # or "prod"
 
 # Create S3 bucket for Terraform state
