@@ -20,7 +20,7 @@ terraform {
   backend "s3" {
     bucket         = "med-erp-terraform-state-dev"
     key            = "dev/terraform.tfstate"
-    region         = "us-east-1"
+    region         = "ap-south-1"
     encrypt        = true
     dynamodb_table = "med-erp-terraform-locks"
   }
