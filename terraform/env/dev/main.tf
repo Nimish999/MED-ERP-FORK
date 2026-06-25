@@ -64,8 +64,8 @@ module "eks" {
   vpc_id                = module.vpc.vpc_id
   vpc_cidr              = module.vpc.vpc_cidr
   private_subnet_ids    = module.vpc.private_subnet_ids
-  node_instance_types   = ["t3.medium"]
-  capacity_type         = "SPOT"       # Use Spot for dev cost savings
+  node_instance_types   = ["t3.micro"]
+  capacity_type         = "ON-DEMAND"       # Use Spot for dev cost savings
   node_desired_count    = 2
   node_min_count        = 1
   node_max_count        = 4
